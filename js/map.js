@@ -40,11 +40,7 @@ require([
         }, {
           fieldName: "DETAIL_URL",
           label: "More Details",
-          visible: true,
-          format: {
-            digitSeparator: true,
-            places: 0
-          }
+          visible: true
         }]
       }]
     };
