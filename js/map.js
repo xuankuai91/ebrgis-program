@@ -7,7 +7,7 @@ require([
     "dojo/domReady!"
   ],
   function(
-    Map, MapView, FeatureLayer, GroupLayer, LayerList, Query, QueryTask, on
+    Map, MapView, FeatureLayer, GroupLayer, LayerList
   ) {
     var map = new Map({
       basemap: "topo"
@@ -21,6 +21,38 @@ require([
     });
 
     // Define popup template and get feature layers
+    var census2010Template = {
+      title: "Census 2010",
+      content: [{
+        type: "fields",
+        fieldInfos: [{
+          fieldName: "TRACT",
+          label: "Tract",
+          visible: true
+        }, {
+          fieldName: "SUM_TOTAL_POPULATION",
+          label: "Population",
+          visible: true,
+          format: {
+            digitSeparator: true,
+            places: 0
+          }
+        }, {
+          fieldName: "DETAIL_URL",
+          label: "More Details",
+          visible: true
+        }]
+      }]
+    };
+
+    var census2010Layer = new FeatureLayer({
+      url: "https://services.arcgis.com/KYvXadMcgf0K1EzK/ArcGIS/rest/services/Census_2010_Tract/FeatureServer/0",
+      outFields: ["*"],
+      popupTemplate: census2010Template
+    });
+
+    census2010Layer.title = "Census 2010";
+
     var census2000Template = {
       title: "Census 2000",
       content: [{
@@ -255,10 +287,10 @@ require([
 
     // Add feature layers to a group layer
     var censusGroupLayer = new GroupLayer({
-      title: "Historic Census",
+      title: "Census",
       visible: true,
       visibilityMode: "exclusive",
-      layers: [censusPre1950Layer, census1950Layer, census1960Layer, census1970Layer, census1980Layer, census1990Layer, census2000Layer]
+      layers: [censusPre1950Layer, census1950Layer, census1960Layer, census1970Layer, census1980Layer, census1990Layer, census2000Layer, census2010Layer]
     });
 
     map.add(censusGroupLayer);
