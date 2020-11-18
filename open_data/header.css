@@ -1,0 +1,153 @@
+/*--------Start of Page CSS--------*/
+/*Disable horizontal scroll bar*/
+html, body {
+    overflow-x: hidden;
+}
+/*---------End of Page CSS---------*/
+
+/*-------Start of Header CSS-------*/
+/*Set container full-width*/
+#header > .container {
+    width: 100%;
+    padding: 0px;
+}
+
+/*Move header up 5px*/
+#home-link-region {
+    margin-top: 5px;
+}
+
+/*Set social media layer full-width*/
+.header-links {
+    width: 1024px;
+    height: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Align social media list to right*/
+.header-links > ul {
+    height: 100%;
+    margin: 0px;
+    text-align: right;
+}
+
+/*Align social media item to right*/
+.header-links li {
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+/*Set social media icons' height*/
+.header-links img {
+    height: 15px;
+}
+
+/*Set header body's width*/
+.header-main {
+    width: 1024px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Vertically center site-brand*/
+.site-brand {
+    margin: auto;
+}
+
+/*Set site-brand's font size*/
+strong {
+    font-size: 24px;
+}
+
+/*Remove nav-bar's padding*/
+#header .col-xs-12 {
+    padding: 0px;;
+}
+
+/*Set header nav-bar's properties*/
+.header-nav {
+    height: 45px; /*Remove bottom*/
+    clear: both; /*Disable floating*/
+    background-color: rgb(26,69,114);
+}
+
+/*Set header nav-bar's properties*/
+.header-nav > ul {
+    width: 1024px;
+    height: 100%;
+    /*Center nav-bar start*/
+    margin-left: auto;
+    margin-right: auto;
+    /*Center nav-bar end*/
+}
+
+/*Set list item full-height*/
+.header-nav li {
+    height: 100% !important;
+    line-height: 45px;
+    margin-left: 0px;
+    margin-right: 20px;
+    /*Set item full-height start*/
+    display: inline-block;
+    /*Set item full-height end*/
+    font-size: 16px;
+}
+
+/*Set list item's hover effect*/
+.header-nav li:hover {
+    background-color: rgb(30,79,131);
+}
+
+/*Hide dropdown list first*/
+.dropdown-content {
+    width: 200px;
+    display: none;
+    position: absolute;
+    background-color: rgb(30,79,131);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.75);
+}
+
+/*Show dropdown list on hover*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Set dropdown item's properties*/
+.dropdown-content a {
+    height: 45px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    display: block;
+}
+
+/*Set dropdown item's hover effect*/
+.dropdown-content a:hover {
+    background-color: rgb(34,91,150);
+}
+
+/*Align city-link to right*/
+#city-link {
+    margin-right: 0px;
+    float: right;
+    font-size: 12px;
+}
+
+/*Disable city-link's hover effect*/
+#city-link:hover {
+    background-color: rgb(26,69,114);
+}
+
+/*Set list item's properties*/
+.header-nav a {
+    height: 100%;
+    padding-top: 14px; /*Fill list*/
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: none;
+    text-decoration: none;
+    color: white !important;
+}
+/*--------End of Header CSS--------*/

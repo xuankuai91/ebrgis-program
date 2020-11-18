@@ -1,0 +1,64 @@
+/*-------Start of Footer CSS-------*/
+/*Set footer's properties*/
+#footer {
+    height: 300px;
+    padding-top: 36px;
+    background: rgb(26,69,114);
+}
+
+/*Center and resize icon*/
+#footer img {
+    width: 100px;
+    height: 100px;
+    /*Center image start*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /*Center image end*/
+}
+
+/*Set footer nav-bar's properties*/
+.footer-nav {
+    height: 24px;
+    margin-top: 36px;
+    text-align: center;
+}
+
+/*Set footer nav-bar's properties*/
+.footer-nav > ul {
+    width: auto;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+/*Set list item full-height*/
+.footer-nav li {
+    height: 100% !important;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+/*Set list item's properties*/
+.footer-nav a {
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: none;
+    color: white !important;
+}
+
+/*Set copyright's properties*/
+.footer-copyright {
+    margin-top: 36px;
+    text-align: center;
+}
+
+/*Set copyright's font*/
+.footer-copyright > b {
+    font-size: 12px;
+    color: white;
+}
+/*--------End of Footer CSS--------*/
