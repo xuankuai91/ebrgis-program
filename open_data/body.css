@@ -1,0 +1,145 @@
+/*-----Start of Search Bar CSS-----*/
+/*Set search-bar's width*/
+#title-bar-region > .container {
+    width: 1024px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Set input box's width*/
+#search-region >
+#search-input-wrapper {
+    width: 46%;
+}
+
+/*Force check-box display*/
+#search-results-extent-button-region {
+    display: block !important;
+}
+
+/*Align activities button to right*/
+#activities-region {
+    right: 0px;
+}
+
+/*Set user button's position*/
+#user-region .btn {
+    padding-top: 7px;
+    padding-bottom: 6px;
+    right: 100px;
+}
+/*------End of Search Bar CSS------*/
+
+/*--------Start of Body CSS--------*/
+/*Set whole body-region's width*/
+#slide-region {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Set child elements full-width*/
+#slide-region .container {
+    width: 100%;
+    padding: 0px;
+}
+
+/*Center whole body-region*/
+.container > .row {
+    margin: auto;
+}
+
+/*Set image banner area properties*/
+.image-banner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Set image full-width*/
+.image-banner > img {
+    width: 100%;
+}
+
+/*Set about region's properties*/
+.data-about {
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Set about title's top margin*/
+.data-about > h2 {
+    margin-top: 0px;
+}
+
+/*Set data title's properties*/
+.data-header {
+    width: 1024px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Set data region's properties*/
+.data-main {
+    width: 1024px;
+    padding-bottom: 30px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #a8a8a8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Set data-cell's properties*/
+.data-cell {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    text-align: center;
+}
+
+/*Set icon's properties*/
+.data-cell img {
+    height: 75px;
+    margin-bottom: 20px;
+    margin-left: auto; /*Center*/
+    margin-right: auto;
+    display: block;
+}
+
+/*Set featured title's properties*/
+.featured-datasets {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Set image's properties*/
+.featured-datasets img {
+    width: 233.5px;
+    height: 140.1px;
+    margin-bottom: 20px;
+    margin-left: auto; /*Center*/
+    margin-right: auto;
+    display: block;
+}
+/*---------End of Body CSS---------*/
+
+/*---Start of secondary page CSS---*/
+/*Remove results-region's padding*/
+#slide-region #main {
+    padding-left: 0px;
+}
+
+/*Remove favorites-region's padding*/
+#slide-region #search-results-favorites-region {
+    padding-right: 0px;
+}
+/*----End of secondary page CSS----*/
